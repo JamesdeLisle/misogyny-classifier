@@ -2,6 +2,11 @@
 
 A binary classifier for misogynistic text.
 
+## Requirements
+
+1. python 3.10.x.
+2. install the requirements found in `requirements.txt`
+
 ## Dataset Preparation
 
 1. The dataset provided contained a `nan` value in the `label` column which was removed.
