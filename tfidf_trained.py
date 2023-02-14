@@ -83,7 +83,7 @@ class MisogynyModel:
                 elif prediction == item['is_misogyny']:
                     true_negative += 1
 
-        accuracy = true_positive / len(self.validation_set)
+        accuracy = (true_positive + true_negative) / len(self.validation_set)
         print(f"accuracy: {accuracy}")
         precision = true_positive / (true_positive + false_positive)
         recall = true_positive / (true_positive + false_negative)
